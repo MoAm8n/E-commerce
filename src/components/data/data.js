@@ -3,7 +3,8 @@ export const Products = [
         id: 1,
         title: "TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
         price: 70,
-        image: "../images/dataProduct/item1.png",
+        image: `${process.env.PUBLIC_URL}//images/dataProduct/item1.png`,
+        // image: "../images/dataProduct/item1.png",
         type: "mobile",
         start: [
             <i class='fa-solid fa-star'></i>, 
