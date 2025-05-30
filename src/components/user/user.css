@@ -1,0 +1,28 @@
+.pageUser .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid #E4E7E9;
+    padding: 15px 0; 
+}
+.pageUser .user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.logout,
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout button,
+.login button{
+    border: 1px solid #E4E7E9;
+    background-color: #fff;
+    width: 150px;
+    margin: 20px 0;
+    padding: 10px;
+}

@@ -1,0 +1,114 @@
+.slider1{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slider1 .title span{
+    color: #2484C2;
+}
+.slider1 img{
+    width: 300px;
+    height: 350px;
+}
+.selHome{
+    position: absolute;
+    background-color: #2DA5F3;
+    width: 70px;
+    height: 70px;
+    z-index: 10000000;
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+.slick-dots{
+    display: flex !important;
+}
+.slick-dots li button::before{
+    font-size: 15px !important;
+}
+.sideHome .div1{
+    background-color: #191C1F;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.sideHome .div1 .title {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+    color: var(--scs-first);
+}
+.sideHome .div1 .title span{
+    color: #EBC80C;
+}
+.sideHome .div1 .off span{
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    color: #fff;
+    background-color: #EFD33D;
+    color: #000;
+    padding: 5px;
+    z-index: 999;
+    font-weight: 500;
+}
+.sideHome .div1 .off img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+}
+.sideHome .div2{
+    background-color: #F2F4F5;
+    padding: 25px 35px;
+}
+.sideHome .div2 .title span{
+    color: #2DA5F3;
+    font-weight: 500;
+}
+.lastHome{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.lastHome h4{
+    font-weight: 700;
+}
+.lastHome i,
+.lastHome p{
+    color: #5F6C72;
+}
+@media(max-width: 767px){
+    .sideHome .div2 .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider1{
+        display: flex;
+        flex-direction: column;
+    }
+    .selHome{
+        top: 160px;
+    }
+    .lastHome{
+        gap: 10px;
+    }
+    .lastHome h4{
+        font-size: 0.9rem;
+    }
+    .lastHome p{
+        font-size: 13px;
+    }
+}
+.home .slick-slider button::before {
+    display: none !important;
+}

@@ -1,0 +1,203 @@
+.homeProducts-left{
+    background-color: #F3DE6D;
+    text-align: center;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+}
+.homeProducts-left img{
+    width: 100%;
+}
+.homeProducts-left .title span{
+    color: #BE4646;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.homeProducts-left .title .text-dark{
+    font-size: 14px;
+}
+.homeProducts-content .active{
+    border-bottom: 2px solid #FA8232;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000000 !important;
+}
+.homeProducts-content li{
+    color: #5F6C72;
+    font-weight: 400;
+    cursor: pointer;
+}
+.homeProducts-content .shopBtn{
+    background-color: #fff;
+    color: #FA8232 !important;
+    width: 120px;
+    height: 30px;
+}
+.homeProducts-content .product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 15px;
+}
+.homeProducts-content .product-box{
+    width: 220px;
+    height: 300px;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+.homeProducts-content .product-btn,
+.AllBox .product-btn{
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.homeProducts-content .product-btn button,
+.AllBox .product-btn button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.homeProducts-content .product-box:hover .product-btn,
+.AllBox:hover .product-btn{
+    display: flex;
+}
+.homeProducts-content .product-btn button:hover,
+.AllBox .product-btn button:hover{
+    background-color: #FA8232;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.homeProducts-content .product-box img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.homeProducts-content .product-box> button{
+    position: absolute;
+    background: aquamarine;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    top: 0;
+}
+.homeProducts-content .product-box h6{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    height:  40px;
+    overflow: hidden;
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+}
+.homeProducts-content .product-box p{
+    font-size: 12px;
+    color: #2DA5F3;
+    font-weight: 600;
+}
+.start span:first-child {
+    color: #FA8232;
+    margin-right: 10px;
+}
+.start span:last-child{
+    font-weight: 600;
+}
+.boxShowProduct{
+    background-color: #fff;
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: #0000009f 0 0 0 250px;
+    z-index: 999999999;
+    padding: 30px;
+    overflow: hidden;
+}
+.boxShowProduct button{
+    float: right;
+}
+.boxShowProduct .of {
+    position: absolute;
+    top: 20px;
+}
+.boxShowProduct .box{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translate(10%,-50%);
+    width: 80%;
+}
+
+@media(max-width: 767px){
+    .homeProducts .row{
+        flex-direction: column-reverse;
+    }
+    .list-content{
+        flex-direction: column;
+    }
+    .list-content .list{
+        gap: 10px;
+    }
+    .list-content .list li{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .list-content .list .shopBtn{
+        display: none;
+    }
+    .homeProducts-content .product-list{
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+        gap: 10px;
+    }
+    .homeProducts-content .product-box{
+        width: 180px;
+        height: 290px;
+    }
+    .homeProducts-left {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homeProducts-left img{
+        width: 170px;
+    }
+    .homeProducts-left .title span,
+        .homeProducts-left .title p{
+        font-size: 14px;
+    }
+    .homeProducts-content .product-btn button,
+    .AllBox .product-btn button{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+    }
+    .boxShowProduct {
+        width: 350px;
+        height: 455px;
+    }
+    .boxShowProduct .box{
+        flex-direction: column;
+        top: 48%;
+        transform: translate(10%, -50%);
+        width: 88%
+    }
+    .boxShowProduct .box img{
+        width: 60%;
+    }
+}

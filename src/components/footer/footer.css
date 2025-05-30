@@ -1,0 +1,81 @@
+.footerTop{
+    background-color: #1B6392;
+    padding: 30px;
+    text-align: center;
+}
+.footerTop form{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.footerTop form input{
+    width: 500px;
+    height: 60px;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    color: #77878F;
+}
+.footerTop form button{
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    z-index: 2000;
+    color: #191C1F;
+    font-size: 18px;
+}
+footer ul li:hover{
+    color: #fff;
+}
+footer{
+    background-color: #191C1F;
+    color: #fff;
+    padding: 30px 0;
+    padding-bottom: 60px;
+}
+footer ul li{
+    color: #929FA5;
+    margin: 10px 0;
+}
+footer .shopBtn{
+    background: transparent;
+    color: #FA8232;
+    font-weight: 600;
+}
+.col-last ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-last li{
+    width: auto;
+    border: 1px solid #77878F;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+}
+.col-last li:hover{
+    background-color: #303639;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+}
+@media(max-width: 767px){
+    .footerTop  .title p{
+        font-size: 13px;
+        width: 100% !important;
+    }
+    .footerTop form input {
+        width: 300px;
+    }
+    .footerTop form button {
+        font-size: 13px;
+        width: 100px;
+    }
+    .images img{
+        width: 60px !important;
+    }
+    footer .logo img{
+        width: auto !important;
+    }
+
+}
