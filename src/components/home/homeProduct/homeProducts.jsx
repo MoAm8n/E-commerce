@@ -21,7 +21,7 @@ const HomeProducts = ({ activeFilter , filterProduct, product, checkedCart, chec
               <button className="shopBtn text-white rounded-0 mt-lg-4">SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
               </Link>
             </div>
-              <img src="../../../../public/images/homeProduct/Image-left.jpg" alt="" />
+              <img src="../images/homeProduct/Image-left.jpg" alt="" />
           </div>
           <div className="homeProducts-content col-lg-9 ">
             <div className="list-content d-flex align-items-center justify-content-between">
