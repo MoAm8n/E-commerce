@@ -4,11 +4,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Auth0Provider } from '@auth0/auth0-react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
   <Auth0Provider
     domain="dev-tbhgrv4m2wdbflhs.us.auth0.com"
     clientId="sPtbGwWiDmAb5RUmtoPiKNOuNeHzcUdS"
@@ -18,7 +18,7 @@ root.render(
   >
     <App />
   </Auth0Provider>
-  </BrowserRouter>
+  </HashRouter>
 
 );
 reportWebVitals();
