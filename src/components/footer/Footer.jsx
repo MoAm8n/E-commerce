@@ -14,11 +14,11 @@ export const Footer = () => {
             </form>
             <hr />
             <div className="images flex justify-content-center gap-lg-3 gap-2 ">
-              <img src="../images/footer/image1.png" alt="" />
-              <img src="../images/footer/image2.png" alt="" />
-              <img src="../images/footer/image3.png" alt="" />
-              <img src="../images/footer/image4.png" alt="" />
-              <img src="../images/footer/image5.png" alt="" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/image1.png"} alt="Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/image2.png"} alt="Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/image3.png"} alt="Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/image4.png"} alt="Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/image5.png"} alt="Logo" />
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ export const Footer = () => {
           <div className="row">
             <div className='col-lg-3 col-6 '>
               <div className="logo pb-3">
-                <img src="../images/footer/Logo.png" alt="" />
+              <img src={process.env.PUBLIC_URL + "/images/footer/Logo.png"} alt="Logo" />
               </div>
               <ul>
                 <li>Customer Supports: 
