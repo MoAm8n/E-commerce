@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Route,Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../header/Header'
 import Home from '../home/home/Home'
 import HomeProducts from '../home/homeProduct/homeProducts'
@@ -180,7 +180,8 @@ return (
       setWishlist={setWishlist}
     />
     <main className="main-content">
-    <Switch>
+    <Router basename="/E-commerce">
+    <Routes>
       <Route path='/' element={
         <>
         {homeHided && <Home />}
@@ -265,7 +266,8 @@ return (
         />
         }
         />
-    </Switch>
+    </Routes>
+   </Router>
     </main>
   </>
 );
