@@ -9,7 +9,7 @@ const User = ({setCart, setWishlist}) => {
                 setWishlist([])
                 localStorage.removeItem('cart')
                 localStorage.removeItem('wishlist')
-                logout({ logoutParams: { returnTo: window.location.origin } })
+                logout({ logoutParams: { returnTo: 'https://moam8n.github.io/E-commerce/' } })
                 alert("تسجيل الخروج بنجاح ومسح بيانات حضرتك")
             }
     return (
