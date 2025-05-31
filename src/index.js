@@ -21,9 +21,9 @@ root.render(
         domain={process.env.REACT_APP_AUTH0_DOMAIN}
         clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
         authorizationParams={{
-          redirect_uri: window.location.origin + process.env.PUBLIC_URL,
+          redirect_uri: window.location.origin + (process.env.PUBLIC_URL || ''),
           audience: process.env.REACT_APP_AUTH0_AUDIENCE,
-          scope: process.env.REACT_APP_AUTH0_SCOPE
+          scope: process.env.REACT_APP_AUTH0_SCOPE || 'openid profile email'
         }}
         cacheLocation="localstorage"
       >
@@ -31,4 +31,5 @@ root.render(
       </Auth0Provider>
     </BrowserRouter>
   </React.StrictMode>
+);
 );
