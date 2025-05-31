@@ -10,14 +10,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-        <Auth0Provider
-            domain="dev-tbhgrv4m2wdbflhs.us.auth0.com"
-            clientId="XQdHGvY5rO8u0M7XrN8RgnByYNxDZTZN"
-            authorizationParams={{
-              redirect_uri: window.location.origin
-            }}
-        >
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <Auth0Provider
+                  domain="dev-tbhgrv4m2wdbflhs.us.auth0.com"
+                  clientId="XQdHGvY5rO8u0M7XrN8RgnByYNxDZTZN"
+                  authorizationParams={{
+                    redirect_uri: "https://moam8n.github.io/E-commerce/" // هنا!
+                  }}
+                >
         <App />
       </Auth0Provider>
     </BrowserRouter>
