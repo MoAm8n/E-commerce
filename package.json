@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce_website",
+  "name": "ecommerce-app",
   "homepage": "https://moam8n.github.io/E-commerce",
   "version": "0.1.0",
   "private": true,
@@ -10,12 +10,11 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.6",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^7.6.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.30.3",
     "router": "^2.2.0",
     "slick-carousel": "^1.8.1",
@@ -48,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

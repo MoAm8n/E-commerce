@@ -17,7 +17,16 @@
     <title>E-commerce_Website</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      const basePath = '/E-commerce';
+      const path = window.location.pathname.replace(basePath, '');
+      sessionStorage.setItem('redirect', path);
+      window.location.href = basePath + path;
+    </script>
+  </head>
+  <body>
+    Redirecting to <a href="/E-commerce">application</a>...
+
     <div id="root"></div>
   </body>
 </html>

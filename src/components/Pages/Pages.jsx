@@ -1,3 +1,7 @@
+// PUBLIC_URL=/E-commerce
+// REACT_APP_AUTH0_DOMAIN=dev-tbhgrv4m2wdbflhs.us.auth0.com
+// REACT_APP_AUTH0_CLIENT_ID=sPtbGwWiDmAb5RUmtoPiKNOuNeHzcUdS
+
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
