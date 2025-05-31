@@ -50,7 +50,7 @@ const Home = () => {
                 <button className="shopBtn text-white rounded-0 mt-2">SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
               </div>
                 <div className="img">
-                <img src="../images/home/home1.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/images/home/home1.png`} alt="Home" />
                 <span className="selHome">$350</span>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const Home = () => {
                 <button className="shopBtn text-white rounded-0 mt-2">SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
               </div>
                 <div className="img">
-                <img src="../images/home/home1.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/images/home/home1.png`} alt="Home" />
                 <span className="selHome">$250</span>
                 </div>
               </div>
@@ -79,12 +79,14 @@ const Home = () => {
                 </div>
                 <div className="off">
                   <span>29% OFF</span>
-                  <img src="../images/home/sideHome1.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/images/home/sideHome1.png`} alt="Home" />
+                  {/* <img src="../images/home/sideHome1.png" alt="" /> */}
                 </div>
               </div>
               <div className="div2 flex gap-lg-5">
                 <div className="off">
-                  <img src="../images/home/sideHome2.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/images/home/sideHome2.png`} alt="Home" />
+                  {/* <img src="../images/home/sideHome2.png" alt="" /> */}
                 </div>
                 <div className="title">
                   <h3 className="mb-2">Xiaomi FlipBuds Pro</h3>

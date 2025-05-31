@@ -1,7 +1,3 @@
-// PUBLIC_URL=/E-commerce
-// REACT_APP_AUTH0_DOMAIN=dev-tbhgrv4m2wdbflhs.us.auth0.com
-// REACT_APP_AUTH0_CLIENT_ID=sPtbGwWiDmAb5RUmtoPiKNOuNeHzcUdS
-
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
@@ -17,6 +13,7 @@ import { Footer } from '../footer/Footer'
 import Shop from '../shopPage/Shop'
 import Contact from '../contact/Contact'
 import User from '../user/User'
+
 const Pages = () => {
     const [product, setProduct] = useState( Products || [])
     const [activeFilter, setActive] = useState("all")
