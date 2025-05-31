@@ -43,7 +43,9 @@ const Header = ({ search, setSearch, headSearch, hideHome, showHome, cart, wishl
                 <div className="header-end flex px-2 px-md-5">
                     <div className="logo">
                         <Link to="/Home" className='flex'>
-                        <img src="../images/logo.png" alt="logo" />
+                        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="Logo" />
+
+                        {/* <img src="../images/logo.png" alt="logo" /> */}
                         <h2 className='text-white'>CLICON</h2>
                         </Link>
                     </div>
