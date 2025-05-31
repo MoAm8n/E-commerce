@@ -20,11 +20,11 @@ root.render(
       <Auth0Provider
         domain={process.env.REACT_APP_AUTH0_DOMAIN}
         clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
-        authorizationParams={{
-          redirect_uri: window.location.origin + process.env.PUBLIC_URL,
-          audience: process.env.REACT_APP_AUTH0_AUDIENCE,
-          scope: process.env.REACT_APP_AUTH0_SCOPE
-        }}
+        // authorizationParams={{
+        //   redirect_uri: window.location.origin + process.env.PUBLIC_URL,
+        //   audience: process.env.REACT_APP_AUTH0_AUDIENCE,
+        //   scope: process.env.REACT_APP_AUTH0_SCOPE
+        // }}
         cacheLocation="localstorage"
       >
         <App />
