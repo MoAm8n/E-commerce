@@ -20,7 +20,7 @@ const NewCate = () => {
                             </Link>
                         </div>
                         <div className='position-relative'> 
-                            <img src="../images/new.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/new.png`} alt="" />
                             <span className='disImage'>$1999</span>
                         </div>
                     </div>
