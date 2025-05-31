@@ -37,7 +37,8 @@ const Home = () => {
                 </Link>
               </div>
                 <div className="img">
-                <img src="../images/home/home1.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/images/home/home1.png`} alt="Home" />
+                {/* <img src="../images/home/home1.png" alt="" /> */}
                 <span className="selHome">$299</span>
                 </div>
               </div>
