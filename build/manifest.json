@@ -1,0 +1,15 @@
+{
+    "name": "E-commerce Website",
+    "short_name": "E-commerce",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#080808",
+    "icons" :[
+        {
+            "src": "/E-commerce/images/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
