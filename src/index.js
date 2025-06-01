@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/E-commerce">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Auth0Provider
                   domain="dev-tbhgrv4m2wdbflhs.us.auth0.com"
                   clientId="XQdHGvY5rO8u0M7XrN8RgnByYNxDZTZN"

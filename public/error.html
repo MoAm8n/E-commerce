@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+        <link rel="preload" href="<%= process.env.PUBLIC_URL %>/static/css/main.[hash].css" as="style">
+        <link rel="preload" href="<%= process.env.PUBLIC_URL %>/static/js/main.[hash].js" as="script">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+      <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Expires" content="0">
+    <title>E-commerce_Website</title>
+  </head>
+  <body>
+    <!-- <script>
+      const basePath = '/E-commerce';
+      const path = window.location.pathname.replace(basePath, '');
+      sessionStorage.setItem('redirect', path);
+      window.location.href = basePath + path;
+    </script> -->
+
+    <div id="root"></div>
+  </body>
+</html>
